@@ -6,7 +6,30 @@
 }
 body{
     background-color: #70A288;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    display: flex;
 }
-.header{
+/* .header{
     text-align: center;
+} */
+
+form{
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    margin: 0;
+    background-color: #DAB785;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
 }
+/* button{
+    padding: 20px;
+    display: flex;
+} */
