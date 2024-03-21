@@ -1,3 +1,7 @@
+//cache at least one element using selectElementById
+let lastName = document.getElementById('last name');
+console.log(lastName);
+
 //Cache at least one element with query.Selector
 let btn = document.querySelector('button'); //calling by id use # calling by class use .
 console.log(btn);
@@ -19,11 +23,24 @@ console.log(h3);
 h3.innerText = 'Venture into a new world of dice!'
 document.querySelector("#form1").appendChild(h3);
 
+//Use the parent-child-sibling relationship to navigate between elements at least once 
+//(firstChild, lastChild, parentNode, nextElementSibling, etc.).
+const lastEl = document.querySelector('#last-name').parentNode
+console.log(lastEl);
 
-//non working code
-// btn.addEventListener('register', (evt) =>{
+
+
+//iterate over a collection of elements
+
+
+
+//non working code, trying to add required attribute ask for help
+// let form2El = document.getElementById('form2');
+// // console.log(form2El);
+
+// form2El.addEventListener('submit', (evt) =>{
 //         evt.preventDefault();
-//         // alert(`You submitted:
-//         // ${btn.querySelector(input.value)}`);
-//         // return 'nothing submitted'
+//         alert(`You submitted:
+//         ${btn.querySelector(input.value)}`);
+//         return 'nothing submitted'
 //     })
