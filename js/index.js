@@ -1,15 +1,15 @@
 //cache at least one element using selectElementById
-let lastName = document.getElementById('last name');
+let lastName = document.getElementById('last-name');
 console.log(lastName);
 
 //Cache at least one element with query.Selector
-let btn = document.querySelector('button'); //calling by id use # calling by class use .
+let btn = document.querySelector('.btn'); //calling by id use # calling by class use .
 console.log(btn);
 
 //Event Listener for Button
 btn.addEventListener('click', handleClick);
 function handleClick(evt) {
-    alert(evt.target);
+    alert(evt.value);
 }
 
 //Centering the Header using .style
@@ -29,18 +29,20 @@ const lastEl = document.querySelector('#last-name').parentNode
 console.log(lastEl);
 
 
-
 //iterate over a collection of elements
-
+const inputEl = document.querySelectorAll('.wrapper');
+inputEl.forEach(wrapper => {
+    console.log(wrapper)
+})
 
 
 //non working code, trying to add required attribute ask for help
-// let form2El = document.getElementById('form2');
-// // console.log(form2El);
+// let form1El = document.getElementById('form1');
+// // console.log(form1El);
 
-// form2El.addEventListener('submit', (evt) =>{
+// form1El.addEventListener("submit", (evt) =>{
 //         evt.preventDefault();
-//         alert(`You submitted:
-//         ${btn.querySelector(input.value)}`);
-//         return 'nothing submitted'
+//         // alert(`You submitted:
+//         // ${btn.querySelector(input.value)}`);
+//         // return 'nothing submitted'
 //     })
